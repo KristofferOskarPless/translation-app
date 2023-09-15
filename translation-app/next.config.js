@@ -1,12 +1,9 @@
-const nextConfig = {}
-
-module.exports = {
-  ...nextConfig,
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.csv$/,
-      loader: 'csv-loader',
-    });
-    return config;
-  },
-};
+module.exports = async (phase, { defaultConfig }) => {
+  /**
+   * @type {import('next').NextConfig}
+   */
+  const nextConfig = {
+    /* config options here */
+  }
+  return nextConfig
+}
