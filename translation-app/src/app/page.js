@@ -1,6 +1,4 @@
 import React from "react";
-import { parse } from 'csv';
-import translations from "./translations.csv";
 import TextField from './components/textfield';
 import Button from './components/button';
 
