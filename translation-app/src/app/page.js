@@ -4,7 +4,7 @@ import translations from "./translations.csv";
 import TextField from './components/textfield';
 import Button from './components/button';
 
-const randomWord = translations[Math.floor(Math.random() * translations.length)];
+/* const randomWord = translations[Math.floor(Math.random() * translations.length)]; */
 
 const IndexPage = () => {
   return (
@@ -12,13 +12,13 @@ const IndexPage = () => {
       <div className="justify-center">
         <h1 className="text-5xl font-semibold pb-8">🚀 Ale's Amazing Translation App</h1>
         <TextField
-          placeholder={randomWord.norw}
+          placeholder="{randomWord.norw}"
         />
         <TextField
           placeholder="Your answer"
         />
         <Button
-          onClick={() => {
+        /*  onClick={() => {
             const userInput = textField.value;
             const correctTranslation = randomWord.English;
 
@@ -27,7 +27,7 @@ const IndexPage = () => {
             } else {
               alert('Incorrect!');
             }
-          }}
+          }}*/
         >
           Check answer
         </Button>
